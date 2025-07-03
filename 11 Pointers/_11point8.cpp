@@ -86,13 +86,12 @@ void displayData( Student *ptr){
 
 // ******** 11.10 Time Structure and Pointer ********
 void convertToStandardTime( int sec, Time *time ){
-    
     time -> seconds = sec;
     time -> minutes = time -> seconds / 60;
     time -> seconds %= 60;
     time -> hours = time -> minutes / 60;
     time -> minutes %= 60;
-    time -> hours %= 24; 
+    time -> hours %= 24;
 }
 
 void displayTime( Time *time ){
